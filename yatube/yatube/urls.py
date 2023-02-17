@@ -3,6 +3,7 @@ from django.urls import include, path
 
 urlpatterns = [
 
-    path('', include('posts.urls')),
+    path('', include('posts.urls', namespace='index')),
+    path('group/<slug:slug>/', include('posts.urls', namespace='posts')),
     path('admin/', admin.site.urls),
 ]
