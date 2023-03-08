@@ -1,4 +1,6 @@
 import os
+from django.conf import settings
+
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'j(3i03-m1c92o#c!jkg&&-4)=r-zm+mbt7sy@&+re1osu#+5r1'
@@ -69,7 +71,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = 'ru-RU'
+LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'UTC'
 
