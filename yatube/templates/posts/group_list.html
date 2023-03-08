@@ -2,7 +2,7 @@
 {% block content %}
     <main>
       <div class="container py-5">
-         <h2> Записи сообщества </h2>
+         <h2> Записи сообщества {{ group.title }} </h2>
           <br>
          {% for post in page_obj %}
                   <ul>
